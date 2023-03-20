@@ -15,6 +15,7 @@ body {
 
 h1,
 h1,
+h2,
 h3,
 p,
 a {
@@ -29,7 +30,7 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   object-fit: contain;
 }
@@ -40,9 +41,9 @@ a {
   font-size: 1.75rem;
 }
 
-.titulo-h2 {
-  font-size: 2.25rem;
-  text-transform: uppercase;
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
 }
 
 .center {
@@ -50,6 +51,11 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+}
+
+.sectionMargin {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 @mixin flex($justify) {
@@ -69,7 +75,43 @@ a {
 @mixin button() {
   padding: 7px 14px;
   border-radius: 5px;
+  background-color: $fundo;
+  color: $cor-primaria;
+  border: 2px solid $cor-primaria;
+  box-shadow: 10px 15px 10px -20px #000;
+  transition: 0.2s;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: $cor-primaria;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 20px 15px 20px -20px #000000ca;
+    scale: 1.05;
+  }
 }
 
 /* @include flex(space-between);
   gap: 0px 50px; */
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .sectionMargin {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .titulo {
+    font-size: 1.75rem;
+  }
+
+  @mixin button() {
+    font-size: 1.25rem;
+  }
+}

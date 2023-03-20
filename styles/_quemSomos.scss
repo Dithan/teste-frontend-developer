@@ -1,0 +1,38 @@
+.quemSomos {
+  @include grid(1fr 1fr);
+  gap: 25px;
+
+
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  picture {
+    max-width: 500px;
+    margin: auto;
+    img {
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .quemSomos {
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    picture{
+      grid-row: 2;
+    }
+  }
+}
+
+
+@media (max-width: 425px) {
+  .quemSomos {
+    p{
+      font-size: 1rem;
+    }
+  }
+}

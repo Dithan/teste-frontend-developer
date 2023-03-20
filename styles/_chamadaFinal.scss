@@ -1,0 +1,60 @@
+.chamadaFinal {
+  background-color: #150261;
+  color: white;
+
+  .chamadaFinalContainer {
+    @include grid(1fr 1fr);
+    gap: 50px;
+
+    .textosFinal {
+      p {
+        max-width: 40ch;
+        font-size: 1.25rem;
+      }
+    }
+
+    .chamadaFinalDiv {
+      @include grid(1fr);
+      justify-content: center;
+      gap: 25px;
+      background-color: white;
+      padding: 50px 25px;
+      border-radius: 5px;
+      color: #000000;
+      text-align: center;
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      .min {
+        font-size: 0.75rem;
+      }
+
+      a {
+        @include button();
+        align-self: center;
+        justify-self: center;
+
+        &:hover {
+          border: 2px solid transparent;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .chamadaFinal {
+    .chamadaFinalContainer {
+      @include grid(auto);
+      text-align: center;
+      .textosFinal {
+        margin: auto;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

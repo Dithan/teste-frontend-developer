@@ -13,7 +13,6 @@ main {
       h1 {
         max-width: 25ch;
         margin-bottom: 50px;
-        font-size: 2.5rem;
       }
 
       p {
@@ -81,7 +80,8 @@ main {
   main {
     .main {
       grid-template-columns: auto;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
+      padding-top: 25px;
 
       .formulario {
         margin: auto;
@@ -93,12 +93,10 @@ main {
 @media (max-width: 768px) {
   main {
     .main {
-      padding-bottom: 50px;
       .textosMain {
         h1 {
           max-width: 25ch;
           margin-bottom: 25px;
-          font-size: 2rem;
         }
 
         p {
@@ -132,7 +130,6 @@ main {
 
       .textosMain {
         h1 {
-          font-size: 1.75rem;
           margin-bottom: 10px;
         }
       }

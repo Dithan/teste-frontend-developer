@@ -1,0 +1,49 @@
+.servicos {
+  background-color: #4a2cc5;
+  color: white;
+  text-align: center;
+
+  .listaServicos {
+    @include grid(1fr 1fr);
+    gap: 25px;
+    margin: 50px auto 80px auto;
+    text-align: start;
+
+    li {
+      @include grid(auto 1fr);
+      gap: 10px;
+      picture {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  a {
+    @include button();
+  }
+}
+
+@media (max-width: 1024px) {
+  .servicos {
+    .listaServicos {
+      grid-template-columns: 1fr;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .servicos {
+    .listaServicos {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    a {
+      font-size: 1.25rem;
+    }
+  }
+}
