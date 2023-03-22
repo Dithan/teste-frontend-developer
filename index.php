@@ -10,8 +10,6 @@
     $telefone = $_POST['telefone'];
     $mensagem = $_POST['mensagem'];
 
-    /* $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,mensagem) VALUES ($nome,$email,$telefone,$mensagem)"); */
-
     $nome = mysqli_real_escape_string($conexao, $nome);
     $email = mysqli_real_escape_string($conexao, $email);
     $telefone = mysqli_real_escape_string($conexao, $telefone);
