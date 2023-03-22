@@ -1,53 +1,20 @@
 # Teste para estágio Frontend e Full-Stack
 
-## Sobre a Ellos Design
+Olá pessoal da Ellos Design, este foi o meu teste, espero que gostem.
 
-A **Ellos Design** é uma agência de marketing e criação de sites localizada em Guarulhos / SP. Somos uma empresa em constante evolução e sempre estamos abertos para pessoas que gostem de tecnologia e queiram trabalhar na área, mas que principalmente queiram aprender e crescer com a nossa empresa.
+## Instruções de como Rodar o Projeto
 
-## Sobre o teste
+Método 1: Acesse o seguinte link para visualizar a parte estática (Sem o PHP e MySQL / apenas Front-End): https://testeellos.netlify.app/
 
-Este é um teste prático que desenvolvemos para a avaliação dos candidatos participantes de nosso processo seletivo para vagas de Frontend ou Full-Stack.
+Método 2: Baixe os arquivos deste repositório e implemente o banco de dados, Link alyternativo para download do banco: https://drive.google.com/drive/folders/1ZswQ-woqQw5266LM_dKVecgqfWIN22mz?usp=sharing.
 
-## Tecnologias para o desafio
+Após o download do banco, abra o MySQL Workbench.
+Na parte esquerda do programa, selecione a janela "Administration" e escolha a opção "Data Import/Restore".
+Verifique se a nova janela se encontra na "Import From Disk" e marque a opção "Import From Self-Contained File".
+Busque o Banco de dados baixado e selecione-o.
+Clique em "Start Import" e espere a importação.
+Após, selecione a janela "Schemas", atualize e o banco deverá aparecer ja importado.
 
-Você deve utilizar as seguintes tecnologias para o desenvolvimento do teste:
+## Nota:
 
-- HTML5
-- CSS
-- JavaScript ou jQuery
-- PHP (Para Full-Stack)
-- MySQL (Para Full-Stack)
-
-## O que nos impressionaria no teste
-
-- Utilização de um pré-processador para o CSS (De preferência o Sass)
-- Aplicação de animações em CSS (Ex: Animações ao realizar scroll)
-- Ver o teste rodando em live (Bucket estático S3, Heroku, Firebase Hosting, etc)
-- Documentação do projeto (Com instruções para executar)
-
-## O que avaliaremos no seu teste
-
-- Criatividade
-- Organização do código
-- Performance do código
-- Boas práticas de desenvolvimento
-- Documentação do código
-- Adaptação mobile (layout responsivo)
-- Documentação do projeto (Com instruções para executar)
-
-## Etapas para realização do teste
-
-- Faça um [fork](https://github.com/Ellos-Design/teste-frontend-developer/fork) desse projeto em sua conta do GitHub
-- Realize o desafio proposto
-- Faça um push para seu repositório com o desafio implementado
-- Envie um email para (vagas@ellosdesign.com.br) com a URL do seu projeto avisando que você concluiu o teste
-
-## O desafio
-
-Você deverá desenvolver uma landing page seguindo a estrutura exibida na imagem abaixo. Você pode utilizar os textos e imagens de sua preferência para a criação da página.
-
-#### Full-Stack
-
-Deixar o formulário da landing page funcional, onde ao preencher as informações e clicar para enviar, o formulário será submetido e os dados deverão ser gravados em um banco de dados (Neste caso será necessário nos enviar o arquivo SQL para podermos implementar o banco para avaliação do teste).
-
-![Template da página a ser desenvolvida](https://github.com/Ellos-Design/teste-frontend-developer/blob/master/wireframe.png?raw=true)
+Infelizmente pela falta de tempo do meu dia a dia, não consegui executar uma validação de formulário em JavaScript, também poderia adcionar variações das animações em CSS e um Design mais refinado. Durante esse desafio enfrentei algumas dificuldades como o tempo escasso por conta do trabalho integral presencial e faculdade. Espero poder mostrar meu máximo no próximo projeto real pela Ellos. Abraços.
