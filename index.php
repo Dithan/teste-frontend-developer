@@ -1,3 +1,27 @@
+<?php
+
+  if(isset($_POST['submit']))
+  {
+
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $mensagem = $_POST['mensagem'];
+
+    /* $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,mensagem) VALUES ($nome,$email,$telefone,$mensagem)"); */
+
+    $nome = mysqli_real_escape_string($conexao, $nome);
+    $email = mysqli_real_escape_string($conexao, $email);
+    $telefone = mysqli_real_escape_string($conexao, $telefone);
+    $mensagem = mysqli_real_escape_string($conexao, $mensagem);
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,mensagem) VALUES ('$nome','$email','$telefone','$mensagem')");
+
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -24,12 +48,12 @@
       </div>
       <div class="formulario">
         <h2 class="titulo">Chamada para ação</h2>
-        <form id="form">
+        <form action="index.php " method="POST" id="form">
           <input type="text" name="nome" id="nome" placeholder="Nome" required>
           <input type="email" name="email" id="email" placeholder="Email" required>
           <input type="tel" name="telefone" id="telefone" placeholder="DDD + Telefone" required>
           <textarea name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Como podemos te ajudar ?" required></textarea>
-          <button type="submit" class="btn btn-form">Chamada pra ação</button>
+          <button type="submit" name="submit" id="submit-btn" class="btn btn-form">Chamada pra ação</button>
         </form>
       </div>
     </div>
